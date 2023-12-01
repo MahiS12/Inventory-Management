@@ -15,7 +15,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="/static/css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="/static/images/favicon.png" />
+  <link rel="shortcut icon" href="/static/images/logo.png" />
 </head>
 <body>
   <div class="row" id="proBanner">
@@ -32,8 +32,10 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
-          <a class="navbar-brand brand-logo" href="index.html"><img src="/static/images/logo.svg" alt="logo"/></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="/static/images/logo-mini.svg" alt="logo"/></a>
+          <img src="/static/images/logo.png" height="40px" width="40px">
+          <p>Ayurveda Nilayam</p>
+          <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="/static/images/logo.png" height="40px", width="40px", alt="logo"/></a> -->
+          <!-- <a class="navbar-brand brand-logo-mini" href="index.html"><img src="/static/images/logo-mini.svg" alt="logo"/></a> -->
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="typcn typcn-th-menu"></span>
           </button>
@@ -122,7 +124,7 @@
               <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                  <div class="preview-icon bg-success">
+                  <div class="preview-icon bg-danger">
                     <i class="typcn typcn-info mx-0"></i>
                   </div>
                 </div>
@@ -197,7 +199,7 @@
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item nav-search d-none d-md-block mr-0">
+          <!-- <li class="nav-item nav-search d-none d-md-block mr-0">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search..." aria-label="search" aria-describedby="search">
               <div class="input-group-prepend">
@@ -206,13 +208,13 @@
                 </span>
               </div>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_settings-panel.html -->
-      <div class="theme-setting-wrapper">
+      <!-- <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close typcn typcn-times"></i>
@@ -229,7 +231,7 @@
             <div class="tiles default"></div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div id="right-sidebar" class="settings-panel">
         <i class="settings-close typcn typcn-times"></i>
         <ul class="nav nav-tabs" id="setting-panel" role="tablist">
@@ -495,16 +497,16 @@
 
           <div class="row">
             <div class="col-xl-6 grid-margin stretch-card flex-column">
-                <h5 class="mb-2 text-titlecase mb-4">Status statistics</h5>
+                <h5 class="mb-2 text-titlecase mb-4">Financial statistics</h5>
               <div class="row">
                 <div class="col-md-6 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="d-flex justify-content-between align-items-center mb-2">
-                        <p class="mb-0 text-muted">Transactions</p>
-                        <p class="mb-0 text-muted">+1.37%</p>
+                        <p class="mb-0 text-muted">Monthly Sales</p>
+                        <p class="mb-0 text-muted">+7.37%</p>
                       </div>
-                      <h4>1352</h4>
+                      <h4>Rs. 232500</h4>
                       <canvas id="transactions-chart" class="mt-auto" height="65"></canvas>
                     </div>
                   </div>
@@ -514,17 +516,17 @@
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="d-flex justify-content-between align-items-center mb-2">
                         <div>
-                          <p class="mb-2 text-muted">Sales</p>
-                          <h6 class="mb-0">563</h6>
+                          <p class="mb-2 text-muted">Inventory in Stock</p>
+                          <h6 class="mb-0">Rs. 607563</h6>
                         </div>
-                        <div>
+                        <!-- <div>
                           <p class="mb-2 text-muted">Orders</p>
                           <h6 class="mb-0">720</h6>
-                        </div>
-                        <div>
+                        </div> -->
+                        <!-- <div>
                           <p class="mb-2 text-muted">Revenue</p>
                           <h6 class="mb-0">5900</h6>
-                        </div>
+                        </div> -->
                       </div>
                       <canvas id="sales-chart-a" class="mt-auto" height="65"></canvas>
                     </div>
@@ -535,16 +537,17 @@
                 <div class="col-md-6 stretch-card grid-margin grid-margin-md-0">
                   <div class="card">
                     <div class="card-body d-flex flex-column justify-content-between">
-                      <p class="text-muted">Sales Analytics</p>
+                      <p class="text-muted">Sales this year</p>
                       <div class="d-flex justify-content-between align-items-center mb-2">
-                        <h3 class="mb-">27632</h3>
-                        <h3 class="mb-">78%</h3>
+                        <h3 class="mb-">Rs. 1935000</h3>
+                        <!-- <h3 class="mb-">2.5%</h3> -->
                       </div>
                       <canvas id="sales-chart-b" class="mt-auto" height="38"></canvas>
+                      <!-- <canvas id="transactions-chart" class="mt-auto" height="38"></canvas> -->
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 stretch-card">
+                <!-- <div class="col-md-6 stretch-card">
                   <div class="card">
                     <div class="card-body">
                       <div class="row h-100">
@@ -561,7 +564,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="col-xl-6 grid-margin stretch-card flex-column">
@@ -573,7 +576,7 @@
                       <div class="d-flex justify-content-between align-items-start flex-wrap">
                         <div>
                           <p class="mb-3">Monthly Increase</p>
-                          <h3>67842</h3>
+                          <h3>19842</h3>
                         </div>
                         <div id="income-chart-legend" class="d-flex flex-wrap mt-1 mt-md-0"></div>
                       </div>
@@ -597,11 +600,11 @@
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuSizeButton3">
                         <h6 class="dropdown-header">Settings</h6>
-                        <a class="dropdown-item" href="javascript:;">Action</a>
-                        <a class="dropdown-item" href="javascript:;">Another action</a>
-                        <a class="dropdown-item" href="javascript:;">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="javascript:;">Separated link</a>
+                        <a class="dropdown-item" href="javascript:;">Last 6 months</a>
+                        <a class="dropdown-item" href="javascript:;">This Year</a>
+                        <a class="dropdown-item" href="javascript:;">Overall</a>
+                        <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript:;">Separated link</a> -->
                       </div>
                     </div>
                   </div>
@@ -611,30 +614,30 @@
                   <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3 mt-4">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                       <p class="text-muted">Gross Sales</p>
-                      <h5>492</h5>
+                      <h5>232500</h5>
                       <div class="d-flex align-items-baseline">
-                        <p class="text-success mb-0">0.5%</p>
+                        <p class="text-success mb-0">7.5%</p>
                         <i class="typcn typcn-arrow-up-thick text-success"></i>
                       </div>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                      <p class="text-muted">Purchases</p>
-                      <h5>87k</h5>
+                      <p class="text-muted">COGS</p>
+                      <h5>127000</h5>
                       <div class="d-flex align-items-baseline">
-                        <p class="text-success mb-0">0.8%</p>
+                        <p class="text-success mb-0">6%</p>
                         <i class="typcn typcn-arrow-up-thick text-success"></i>
                       </div>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                      <p class="text-muted">Tax Return</p>
-                      <h5>882</h5>
+                      <p class="text-muted">Profit Margin</p>
+                      <h5>53%</h5>
                       <div class="d-flex align-items-baseline">
-                        <p class="text-danger mb-0">-04%</p>
-                        <i class="typcn typcn-arrow-down-thick text-danger"></i>
+                        <p class="text-success mb-0">-04%</p>
+                        <i class="typcn typcn-arrow-up-thick text-success"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center">
+                  <!-- <div class="d-flex justify-content-between align-items-center">
                     <div class="dropdown">
                       <button class="btn bg-white p-0 pb-1 pt-1 text-muted btn-sm dropdown-toggle" type="button" id="dropdownMenuSizeButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Last 7 days
@@ -649,7 +652,7 @@
                       </div>
                     </div>
                     <p class="mb-0">overview</p>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -659,12 +662,12 @@
                   <div class="card newsletter-card bg-gradient-warning">
                     <div class="card-body">
                       <div class="d-flex flex-column align-items-center justify-content-center h-100">
-                        <h5 class="mb-3 text-white">Newsletter</h5>
+                        <h5 class="mb-3 text-white">Get Financial Report</h5>
                         <form class="form d-flex flex-column align-items-center justify-content-between w-100">
                           <div class="form-group mb-2 w-100">
                             <input type="text" class="form-control" placeholder="email address">
                           </div>
-                          <button class="btn btn-danger btn-rounded mt-1" type="submit">Subscribe</button>
+                          <button class="btn btn-danger btn-rounded mt-1" type="submit">Get Report</button>
                         </form>
                       </div>
                     </div>
@@ -676,21 +679,21 @@
                       <div class="row align-items-center h-100">
                         <div class="col-md-4">
                           <figure class="avatar mx-auto mb-4 mb-md-0">
-                            <img src="images/faces/face20.jpg" alt="avatar">
+                            <img src="../static/images/faces/face21.jpg" alt="avatar">
                           </figure>
                         </div>
                         <div class="col-md-8">
-                          <h5 class="text-white text-center text-md-left">Phoebe Kennedy</h5>
-                          <p class="text-white text-center text-md-left">kennedy@gmail.com</p>
+                          <h5 class="text-white text-center text-md-left">Mr. Krishna</h5>
+                          <p class="text-white text-center text-md-left">krishnaK@gmail.com</p>
                           <div class="d-flex align-items-center justify-content-between info pt-2">
-                            <div>
+                            <!-- <div>
                               <p class="text-white font-weight-bold">Birth date</p>
                               <p class="text-white font-weight-bold">Birth city</p>
                             </div>
                             <div>
-                              <p class="text-white">16 Sep 2019</p>
-                              <p class="text-white">Netherlands</p>
-                            </div>
+                              <p class="text-white">16 Sep 1975</p>
+                              <p class="text-white">Kothugadem</p>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -706,15 +709,18 @@
                     <h6 class="mb-2 mb-md-0 text-uppercase font-weight-medium">Sales statistics</h6>
                     <div class="dropdown">
                       <button class="btn bg-white p-0 pb-1 text-muted btn-sm dropdown-toggle" type="button" id="dropdownMenuSizeButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Last 7 days
+                          Last 30 days
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuSizeButton4">
-                        <h6 class="dropdown-header">Settings</h6>
-                        <a class="dropdown-item" href="javascript:;">Action</a>
+                        <!-- <h6 class="dropdown-header">Settings</h6> -->
+                        <a class="dropdown-item" href="javascript:;">Last 6 months</a>
+                        <a class="dropdown-item" href="javascript:;">This Year</a>
+                        <a class="dropdown-item" href="javascript:;">Overall</a>
+                        <!-- <a class="dropdown-item" href="javascript:;">Action</a>
                         <a class="dropdown-item" href="javascript:;">Another action</a>
                         <a class="dropdown-item" href="javascript:;">Something else here</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="javascript:;">Separated link</a>
+                        <a class="dropdown-item" href="javascript:;">Separated link</a> -->
                       </div>
                     </div>
                   </div>
@@ -733,7 +739,7 @@
                   <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
                     <div>
                       <p class="mb-2 text-md-center text-lg-left">Total Expenses</p>
-                      <h1 class="mb-0">8742</h1>
+                      <h1 class="mb-0">Rs. 185,742</h1>
                     </div>
                     <i class="typcn typcn-briefcase icon-xl text-secondary"></i>
                   </div>
@@ -747,7 +753,7 @@
                   <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
                     <div>
                       <p class="mb-2 text-md-center text-lg-left">Total Budget</p>
-                      <h1 class="mb-0">47,840</h1>
+                      <h1 class="mb-0">Rs. 2,00,000</h1>
                     </div>
                     <i class="typcn typcn-chart-pie icon-xl text-secondary"></i>
                   </div>
@@ -761,7 +767,7 @@
                   <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
                     <div>
                       <p class="mb-2 text-md-center text-lg-left">Total Balance</p>
-                      <h1 class="mb-0">$7,243</h1>
+                      <h1 class="mb-0">Rs. 14,248</h1>
                     </div>
                     <i class="typcn typcn-clipboard icon-xl text-secondary"></i>
                   </div>
@@ -779,22 +785,22 @@
                     <thead>
                       <tr>
                         <th class="ml-5">ID</th>
-                        <th>Project name</th>
-                        <th>Customer</th>
-                        <th>Deadline</th>
-                        <th>Payouts	</th>
-                        <th>Traffic</th>
-                        <th>Actions</th>
+                        <th>Product name</th>
+                        <th>Supplier</th>
+                        <th>Price</th>
+                        <th>Quantity	</th>
+                        <th>Expiry Date</th>
+                        <th>Status</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>#D1</td>
-                        <td>Consectetur adipisicing elit </td>
-                        <td>Beulah Cummings</td>
-                        <td>03 Jan 2019</td>
-                        <td>$ 5235</td>
-                        <td>1.3K</td>
+                        <td>Chyawanprash </td>
+                        <td>Dabur</td>
+                        <td>140</td>
+                        <td>23</td>
+                        <td>23-06-2025</td>
                         <td>
                           <div class="d-flex align-items-center">
                             <button type="button" class="btn btn-success btn-sm btn-icon-text mr-3">
@@ -808,7 +814,7 @@
                           </div>
                         </td>
                       </tr>
-                      <tr>
+                      <!-- <tr>
                         <td>#D2</td>
                         <td>Correlation natural resources silo</td>
                         <td>Mitchel Dunford</td>
@@ -887,7 +893,7 @@
                             </button>
                           </div>
                         </td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
                 </div>
